@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperWork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="header__content">
+          <div class="header__information">
+            <div class="header__name-role">
+              <h5 class="header__role">通常スタッフ</h5>
+              <h1 class="header__name">山田 太郎 <small>さん</small></h1>
+            </div>
+            <div class="header__auth">
+              <button class="btn btn-sm btn-outlined-gray">プロフィール</button>
+              <button class="btn btn-sm btn-outlined-gray">ログアウト</button>
+            </div>
+          </div>
+          <div class="header__setting">
+            <button class="btn btn-sm btn-outlined-gray">各種設定</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="side-bar">
+          <nav class="side-bar__nav">
+            <ul class="side-bar__nav-list">
+              <li class="side-bar__nav-item">
+                <a href="/index.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-home"></i>
+                      <p class="side-bar__nav-item-name">ホーム</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="side-bar__nav-item">
+                <a href="/people-in-need-of-care.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-user"></i>
+                      <p class="side-bar__nav-item-name">要介護者</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="side-bar__nav-item side-bar__nav-item--active">
+                <a href="/docs.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-file-alt"></i>
+                      <p class="side-bar__nav-item-name">書類</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="content">
+          <h1 class="content__title">書類</h1>
+          <section class="drag-drop-files">
+            <div class="paper">
+              <div class="drag-drop-files__wrapper">
+                <h2 class="drag-drop-files__title">
+                  ファイルをドラッグドロップ
+                </h2>
+                <p class="drag-drop-files__note">または</p>
+                <button class="btn btn-md btn-contained-primary">
+                  <i class="fa fa-file-alt"></i>
+                  <span> ファイルを選択 </span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="searching-crystals">
+            <div class="paper">
+              <div class="searching-crystals__wrapper">
+                <h2 class="searching-crystals__title">絞り込み検索</h2>
+                <div
+                  class="input-group input-search-docs"
+                  style="min-width: 400px"
+                >
+                  <span class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="名前やファイル名を検索"
+                  />
+                </div>
+                <div class="dropdown btn-choice-month">
+                  <button class="btn btn-md btn-outlined-gray-dropdown">
+                    <span> 書類提出月を選択 </span>
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                  <div class="dropdown__menu">
+                    <a href="/" class="dropdown__item">
+                      <span style="margin-right: 20px"> 書類提出月を選択 </span>
+                      <i class="fa fa-arrow-down"></i>
+                    </a>
+                    <a class="dropdown__item" href="#">Action</a>
+                    <a class="dropdown__item" href="#">Another action</a>
+                    <a class="dropdown__item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+                <button class="btn btn-md btn-contained-gray">検索する</button>
+              </div>
+            </div>
+          </section>
+          <section class="table-data-files">
+            <div class="paper">
+              <div class="table-data-files__wrapper">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ファイル名</th>
+                      <th>時間</th>
+                      <th>書類提出月</th>
+                      <th>ステータス</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="" class="name-file">実績表001.pdf</a>
+                      </td>
+                      <td>
+                        <p class="time-file">2021-08-30 07:49:40</p>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn btn-sm btn-outlined-gray-dropdown">
+                            <span>9</span>
+                            <i class="fa fa-arrow-down"></i>
+                          </button>
+                          <div class="dropdown__menu">
+                            <a href="/" class="dropdown__item">
+                              <span style="margin-right: 20px">9</span>
+                              <i class="fa fa-arrow-down"></i>
+                            </a>
+                            <a class="dropdown__item" href="#">Action</a>
+                            <a class="dropdown__item" href="#"
+                              >Another action</a
+                            >
+                            <a class="dropdown__item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="status-file">
+                          <i class="fa fa-exclamation-triangle"></i> 2枚未連携
+                        </p>
+                      </td>
+                      <td>
+                        <div class="table-data-files__controll">
+                          <button class="btn btn-md btn-contained-primary">
+                            <i class="fa fa-download"></i>
+                            <span> QR添付データ </span>
+                          </button>
+                          <button class="btn btn-md btn-action-danger">
+                            <i class="fa fa-trash-alt"></i>
+                          </button>
+                          <a href="">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pagination">
+                  <nav>
+                    <ul class="pagination-list">
+                      <li class="pagination-item pagination-item--active">
+                        <a class="pagination-link" href="#">1</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">2</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">3</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">4</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">5</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">6</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

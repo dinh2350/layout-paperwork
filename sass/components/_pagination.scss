@@ -1,0 +1,36 @@
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    .pagination-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .pagination-item {
+        border: 1px solid $primary-dark;
+        border-radius: 5px;
+        width: 44px;
+        height: 44px;
+
+        line-height: 44px;
+        text-align: center;
+        .pagination-link {
+          color: $primary-dark;
+          font-weight: 700;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          letter-spacing: 0.5px;
+        }
+        &--active {
+          background-color: $primary-dark;
+          .pagination-link {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

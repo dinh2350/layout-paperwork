@@ -1,0 +1,94 @@
+.works {
+  .works__container {
+    position: relative;
+    .works__bird {
+      position: absolute;
+      top: -65px;
+      left: 8px;
+      .works__bird--wrapper {
+        position: relative;
+        img {
+        }
+        .works__bird--say {
+          position: absolute;
+          top: 15px;
+          left: 104px;
+          min-width: 90px;
+          p {
+          }
+        }
+      }
+    }
+    .works__list {
+      .works__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .works__circle {
+          width: 60px;
+          min-width: 60px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          border-radius: 50%;
+          border: 1px solid #cccccc;
+          margin-right: 20px;
+          .work__numerical-order {
+            font-weight: 400;
+            font-size: 2.4rem;
+            text-align: center;
+          }
+        }
+        .works__title {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: #555555;
+          }
+        }
+        .works__content {
+          width: 100%;
+          max-width: 992px;
+          padding: 15px;
+          background-color: $primary-light;
+          border-radius: 10px;
+
+          display: flex;
+          align-items: flex-start;
+          .works__content--nest {
+            margin-top: 4px;
+          }
+          .works__content--info {
+            flex-grow: 1;
+            margin-top: 30px;
+            padding-left: 7px;
+            p {
+              font-weight: 700;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              color: #111111;
+              margin-bottom: 20px;
+            }
+          }
+          .works__content--demo {
+          }
+        }
+      }
+      .works__item--active {
+        align-items: flex-start;
+        .works__circle {
+          background-color: $primary;
+          border: 1px solid $primary;
+          .work__numerical-order {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

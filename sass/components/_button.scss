@@ -1,0 +1,96 @@
+.btn {
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-sm {
+  min-width: 124px;
+  min-height: 42px;
+  padding: 13px 20px;
+  font-size: 1.4rem;
+  line-height: 1.68rem;
+  font-weight: 400;
+}
+
+.btn-md {
+  padding: 15px;
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+  font-weight: 700;
+}
+
+.btn-outlined-gray {
+  background: transparent;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  color: $gray;
+  span {
+    margin-left: 13px;
+  }
+}
+
+.btn-contained-gray {
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid $gray;
+  border-radius: 4px;
+  color: $gray;
+  span {
+    margin-left: 13px;
+  }
+}
+
+.btn-outlined-primary {
+  background: transparent;
+  border: 1px solid $primary-dark;
+  border-radius: 10px;
+  color: $primary-dark;
+  span {
+    margin-left: 13px;
+  }
+}
+
+.btn-contained-primary {
+  background: $primary-dark;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  span {
+    margin-left: 13px;
+  }
+}
+
+.btn-contained-danger {
+  background: $error-main;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  span {
+    margin-left: 13px;
+  }
+}
+
+.btn-outlined-gray-dropdown {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid $gray;
+  border-radius: 4px;
+  color: $gray;
+  border-radius: 10px;
+  span {
+    margin-right: 25px;
+  }
+}
+
+.btn-lg {
+  min-width: 150px;
+}
+
+.btn-action-danger {
+  width: 50px;
+  height: 50px;
+  background-color: $error-main;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}

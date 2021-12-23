@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperWork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="header__content">
+          <div class="header__information">
+            <div class="header__name-role">
+              <h5 class="header__role">通常スタッフ</h5>
+              <h1 class="header__name">山田 太郎 <small>さん</small></h1>
+            </div>
+            <div class="header__auth">
+              <button class="btn btn-sm btn-outlined-gray">プロフィール</button>
+              <button class="btn btn-sm btn-outlined-gray">ログアウト</button>
+            </div>
+          </div>
+          <div class="header__setting">
+            <button class="btn btn-sm btn-outlined-gray">各種設定</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="side-bar">
+          <nav class="side-bar__nav">
+            <ul class="side-bar__nav-list">
+              <li class="side-bar__nav-item side-bar__nav-item--active">
+                <a href="/index.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-home"></i>
+                      <p class="side-bar__nav-item-name">ホーム</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="side-bar__nav-item">
+                <a href="/people-in-need-of-care.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-user"></i>
+                      <p class="side-bar__nav-item-name">要介護者</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="side-bar__nav-item">
+                <a href="/docs.html">
+                  <div class="side-bar__nav-item-wrapper">
+                    <div class="side-bar__nav-item-start">
+                      <i class="fa fa-file-alt"></i>
+                      <p class="side-bar__nav-item-name">書類</p>
+                    </div>
+                    <div class="side-bar__nav-item-end">
+                      <img src="./images/arrow-right.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="content">
+          <section class="date">
+            <div class="date__wrapper">
+              <p class="date__year">2021年</p>
+              <div class="date__change">
+                <div class="date__circle">
+                  <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <p class="date__month">
+                  <span class="date__month-munber">2</span>
+                  <span class="date__month-string">月</span>
+                </p>
+                <div class="date__circle">
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="works">
+            <div class="works__container paper">
+              <div class="works__bird">
+                <div class="works__bird--wrapper">
+                  <img src="./images/bird.png" alt="" />
+                  <div class="works__bird--say">
+                    <p>今月も頑張ろう</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="works__list">
+                <li class="works__item works__item--active">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">1</span>
+                  </div>
+                  <div class="works__content">
+                    <div class="works__content--nest">
+                      <img src="./images/nest.png" alt="" />
+                    </div>
+                    <div class="works__content--info">
+                      <p>2月分の必要な書類をあずけてください。</p>
+                      <button class="btn btn-md btn-contained-primary">
+                        <i class="fa fa-file-alt"></i>
+                        <span> 書類のアップロード </span>
+                      </button>
+                    </div>
+                    <div class="works__content--demo">
+                      <img src="./images/docs-by-month-demo.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="works__item">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">2</span>
+                  </div>
+                  <div class="works__title">
+                    <p>2月分の書類を振り分けましょう。</p>
+                    <span class="badge badge-circle badge-danger"> 14 </span>
+                  </div>
+                </li>
+                <li class="works__item">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">3</span>
+                  </div>
+                  <div class="works__title">
+                    <p>2月分の書類を提出しましょう。</p>
+                    <span class="badge badge-circle badge-danger"> 14 </span>
+                  </div>
+                </li>
+                <li class="works__item">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">4</span>
+                  </div>
+                  <div class="works__title">
+                    <p>2月分のモニタリングを作成しましょう。</p>
+                  </div>
+                </li>
+                <li class="works__item">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">5</span>
+                  </div>
+                  <div class="works__title">
+                    <p>2月分のモニタリングを作成しましょう。</p>
+                  </div>
+                </li>
+                <li class="works__item">
+                  <div class="works__circle">
+                    <span class="work__numerical-order">6</span>
+                  </div>
+                  <div class="works__title">
+                    <p>要介護者の整理を行いましょう。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

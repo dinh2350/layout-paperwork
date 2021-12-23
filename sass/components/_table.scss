@@ -1,0 +1,68 @@
+.table {
+  width: 100%;
+  display: table;
+  vertical-align: top;
+  text-align: center;
+  tr {
+    height: 62px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  th {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #666666;
+  }
+
+  td,
+  th {
+    padding: 6px;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    .table__number-phone {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    .table__name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      color: #666666;
+    }
+    .table__number-upload {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 0.87);
+      i {
+        margin-left: 14px;
+      }
+    }
+    .status-fax-success {
+      color: #29be87;
+      font-size: 16px;
+    }
+
+    .status-fax-errors {
+      color: $error-main;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+    }
+
+    .table__monitor {
+    }
+  }
+
+  td:last-child {
+    text-align: center;
+  }
+}

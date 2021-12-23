@@ -1,0 +1,39 @@
+.table-data-files {
+  margin-top: 20px;
+  .table-data-files__wrapper {
+    .table {
+      tbody {
+        tr {
+          td {
+            a.name-file {
+              font-weight: 700;
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+              letter-spacing: 0.05em;
+              color: rgba(0, 0, 0, 0.87);
+            }
+            p.time-file {
+              font-weight: 400;
+              font-size: 1.4rem;
+              line-height: 2rem;
+              letter-spacing: 0.05em;
+              color: rgba(0, 0, 0, 0.87);
+            }
+            div.table-data-files__controll {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+            }
+            p.status-file {
+              font-weight: 700;
+              font-size: 1.6rem;
+              line-height: 1.9rem;
+              letter-spacing: 0.05em;
+              color: $error-main;
+            }
+          }
+        }
+      }
+    }
+  }
+}

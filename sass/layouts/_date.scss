@@ -1,0 +1,44 @@
+.date {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .date__year {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+    color: #111111;
+  }
+  .date__change {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .date__circle {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      line-height: 30px;
+      text-align: center;
+      background-color: white;
+      i {
+        color: $primary;
+      }
+    }
+
+    .date__month {
+      text-align: center;
+      color: #111111;
+      .date__month-munber {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 41px;
+      }
+      .date__month-string {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26.5px;
+      }
+    }
+  }
+}

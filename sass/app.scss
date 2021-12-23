@@ -1,0 +1,19 @@
+@import "./helpers/variable";
+@import "./base/reset";
+@import "./base/global";
+
+@import "./components/button";
+@import "./components/badges";
+@import "./components/paper";
+@import "./components/input";
+@import "./components/tabs";
+@import "./components/checkbox";
+@import "./components/table";
+@import "./components/dropdown";
+@import "./components/pagination";
+
+@import "./layouts/main";
+
+@import "./pages/home";
+@import "./pages/people-in-need-of-care";
+@import "./pages/docs";

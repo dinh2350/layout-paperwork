@@ -1,0 +1,21 @@
+.searching-crystals {
+  margin-top: 20px;
+  .searching-crystals__wrapper {
+    display: flex;
+    align-items: center;
+    .searching-crystals__title {
+      margin-right: 62px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      letter-spacing: 0.05rem;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    .input-search-docs {
+      margin-right: 10px;
+    }
+    .btn-choice-month {
+      margin-right: 120px;
+    }
+  }
+}

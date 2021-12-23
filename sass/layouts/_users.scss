@@ -1,0 +1,14 @@
+.users {
+  .users__container {
+    .users__controll {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .users__list-btn-controll {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
